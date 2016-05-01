@@ -1,7 +1,7 @@
 var dbModule = require('./db.js');
 var http = require('http');
 
-http.createServer(function(request, response) {
+/*http.createServer(function(request, response) {
   var headers = request.headers;
   var method = request.method;
   var url = request.url;
@@ -38,7 +38,7 @@ http.createServer(function(request, response) {
     // END OF NEW STUFF
   });
 }).listen(8080);
-
+*/
 
 http.createServer(function(request, response) {
   if (request.method === 'GET' && request.url === '/echo') {
